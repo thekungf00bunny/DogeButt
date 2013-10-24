@@ -364,7 +364,7 @@ botMethods.cleanString = function(string){
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("-______________________-");
+                                    API.sendChat("-________________-");
                                     break;
                             }
                         }else{
@@ -372,7 +372,7 @@ botMethods.cleanString = function(string){
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(botMethods.cleanString(command[1])+" -______________________-");
+                                    API.sendChat(botMethods.cleanString(command[1])+" -________________-");
                                     break;
                             }
                         }
