@@ -410,4 +410,4 @@ botMethods.cleanString = function(string){
         });
     }, 3000);
 
-    API.sendChat('/me Running DogeButt '+mubBot.misc.version)
+    API.sendChat('/me is doing DogeButt '+mubBot.misc.version)
