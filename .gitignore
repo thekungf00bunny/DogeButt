@@ -132,13 +132,13 @@ botMethods.cleanString = function(string){
                     case "cooldown":
                         if(API.getUser(fromID).permission > 1 || mubBot.admins.indexOf(fromID) > -1){
                             if(typeof command[1] == "undefined"){
-                                if(mubBot.settings.cooldown != 10){
+                                if(mubBot.settings.cooldown != 0.01){
                                     API.sendChat('Cooldown is '+mubBot.settings.cooldown+' seconds');
                                 }else{
                                     API.sendChat('Cooldown is disabled');
                                 }
                             }else if(command[1] == "disable"){
-                                mubBot.settings.cooldown = 10;
+                                mubBot.settings.cooldown = 0.01;
                                 API.sendChat('Cooldown disabled');
                             }else{
                                 mubBot.settings.cooldown = command[1];
