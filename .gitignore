@@ -260,9 +260,9 @@ botMethods.cleanString = function(string){
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("Hugs? HUGS!?!?  HUGGGSSSS!!!!!!!!!");
+                                    API.sendChat("Hugs? HUGS!?!?  HUGGGSSSS!!!!!!!");
                                     setTimeout(function(){
-                                        API.sendChat("/me reaches for @"+crowd[randomUser].username+" 's butt, but gets rejected");
+                                        API.sendChat("/me reaches for @"+crowd[randomUser].username+" 's butt, but gets slapped");
                                     }, 650);
                                     break;
                                 case 1:
@@ -272,7 +272,7 @@ botMethods.cleanString = function(string){
                                     API.sendChat("/me does a backflip and lands in @"+crowd[randomUser].username+"'s lap");
                                     break;
                                 case 3:
-                                    API.sendChat("/me tucks and rolls out of a moving car and snatches @"+crowd[randomUser].username+"'s bag and skipps away");
+                                    API.sendChat("/me tucks and rolls out of a moving car and snatches @"+crowd[randomUser].username+"'s purse and runs away");
                                     break;
                             }
                         }else{
@@ -284,17 +284,17 @@ botMethods.cleanString = function(string){
                                 case 0:
                                     API.sendChat("Hugs? HUGS!?  HUGGGSSSS!!!!!");
                                     setTimeout(function(){
-                                        API.sendChat("/me reaches for @"+botMethods.cleanString(command[1])+" 's butt, but gets rejected");
+                                        API.sendChat("/me reaches for @"+botMethods.cleanString(command[1])+" 's butt, but gets slapped");
                                     }, 650);
                                     break;
                                 case 1:
                                     API.sendChat("/me gives @"+botMethods.cleanString(command[1])+" an exploding high five");
                                     break;
                                 case 2:
-                                    API.sendChat("/me gives @"+botMethods.cleanString(command[1])+"'s lap");
+                                    API.sendChat("/me does a backflip and lands in@"+botMethods.cleanString(command[1])+"'s lap");
                                     break;
                                 case 3:
-                                    API.sendChat("/me tucks and rolls out of a moving car and snatches @"+botMethods.cleanString(command[1])+"'s bag and skipps away");
+                                    API.sendChat("/me tucks and rolls out of a moving car and snatches @"+botMethods.cleanString(command[1])+"'s purse and runs away");
                                     break;
                             }
                         }
