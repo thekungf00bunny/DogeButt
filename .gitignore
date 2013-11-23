@@ -70,7 +70,7 @@ botMethods.cleanString = function(string){
             }
             if(mubBot.misc.ready || mubBot.admins.indexOf(fromID) > -1 || API.getUser(data.fromID).permission > 1){
                 switch(command[0].toLowerCase()){
-                    case "ello?":
+                    case "ello":
                         API.sendChat("Ello!");
                         if(mubBot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
                             mubBot.misc.ready = false;
@@ -103,14 +103,6 @@ botMethods.cleanString = function(string){
             if(mubBot.misc.ready || mubBot.admins.indexOf(fromID) > -1 || API.getUser(fromID).permission > 1){
                 switch(command[0].toLowerCase()){
                     /* commented out because the bot isn't running on a dedicated bot account
-                     case "meh":
-                     if(API.getUser(data.fromID).permission > 1 || mubBot.admins.indexOf(fromID) > -1) $("#button-vote-negative").click();
-                     break;
-
-                     case "woot":
-                     if(API.getUser(data.fromID).permission > 1 || mubBot.admins.indexOf(fromID) > -1)  $("#button-vote-positive").click();
-                     break;*/
-
                     case "version":
                         API.sendChat("DogeButt Luna Edition " + mubBot.misc.version);
                         if(mubBot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
@@ -133,13 +125,13 @@ botMethods.cleanString = function(string){
                     case "cooldown":
                         if(API.getUser(fromID).permission > 1 || mubBot.admins.indexOf(fromID) > -1){
                             if(typeof command[1] == "undefined"){
-                                if(mubBot.settings.cooldown != 0.0001){
+                                if(mubBot.settings.cooldown != 10){
                                     API.sendChat('Cooldown is '+mubBot.settings.cooldown+' seconds');
                                 }else{
                                     API.sendChat('Cooldown is disabled');
                                 }
                             }else if(command[1] == "disable"){
-                                mubBot.settings.cooldown = 0.0001;
+                                mubBot.settings.cooldown = 10;
                                 API.sendChat('Cooldown disabled');
                             }else{
                                 mubBot.settings.cooldown = command[1];
@@ -160,10 +152,10 @@ botMethods.cleanString = function(string){
                         if(API.getUser(fromID).permission > 1 || mubBot.admins.indexOf(fromID) > -1){
                             if(mubBot.settings.interactive){
                                 mubBot.settings.interactive = false;
-                                API.sendChat("Bot will no longer interact.");
+                                API.sendChat("DogeButt time over.");
                             }else{
                                 mubBot.settings.interactive = true;
-                                API.sendChat("Bot will now interact.");
+                                API.sendChat("DogeButt time begun.");
                             }
                         }
                         botMethods.save();
@@ -215,7 +207,7 @@ botMethods.cleanString = function(string){
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + crowd[randomUser].username + ", OMG " + mubBot.misc.tacos[randomTaco] + ", poni magicc!");
+                                    API.sendChat("@" + crowd[randomUser].username + ", OMG " + mubBot.misc.tacos[randomTaco] + ", pone magicc!");
                                     break;
                                 case 1:
                                     API.sendChat("@" + crowd[randomUser].username + ", WOW " + mubBot.misc.tacos[randomTaco] + " doge music!");
@@ -233,7 +225,7 @@ botMethods.cleanString = function(string){
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + botMethods.cleanString(command[1]) + ", OMG " + mubBot.misc.tacos[randomTaco] + ", poni magicc!");
+                                    API.sendChat("@" + botMethods.cleanString(command[1]) + ", OMG " + mubBot.misc.tacos[randomTaco] + ", pone magicc!");
                                     break;
                                 case 1:
                                     API.sendChat("@" + botMethods.cleanString(command[1]) + ", WOW " + mubBot.misc.tacos[randomTaco] + " doge music!");
