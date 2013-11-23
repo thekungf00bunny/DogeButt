@@ -224,7 +224,7 @@ botMethods.cleanString = function(string){
                                     API.sendChat("Shibe doge " + mubBot.misc.tacos[randomTaco] + " such greatness, @" + crowd[randomUser].username + ". May the doge be with you.");
                                     break;
                                 case 3:
-                                    API.sendChat("follow doge overlord doge " + mubBot.misc.tacos[randomTaco] + " let doge guide you @" + crowd[randomUser].username + "!");
+                                    API.sendChat("follow doge overlord doge " + mubBot.misc.tacos[randomTaco] + " much freindship @" + crowd[randomUser].username + "!");
                                     break;
                             }
                         }else{
@@ -242,7 +242,7 @@ botMethods.cleanString = function(string){
                                     API.sendChat("Shibe doge " + mubBot.misc.tacos[randomTaco] + " such greatness, @" + botMethods.cleanString(command[1]) + ".  May the doge be with you.");
                                     break;
                                 case 3:
-                                    API.sendChat("follow doge overlord doge " + mubBot.misc.tacos[randomTaco] + " let doge guide you @" + botMethods.cleanString(command[1]) + "!");
+                                    API.sendChat("follow doge overlord doge " + mubBot.misc.tacos[randomTaco] + " much freindship @" + botMethods.cleanString(command[1]) + "!");
                                     break;
                             }
                         }
