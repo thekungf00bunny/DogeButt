@@ -10,7 +10,7 @@ toSave = {};
 toSave.settings = mubBot.settings;
 toSave.moderators = mubBot.moderators;
 
-mubBot.misc.version = "1.0.0";
+mubBot.misc.version = "1.something.idk";
 mubBot.misc.origin = "All credit to Emub and DerptheBass for this sexy bot";
 mubBot.misc.changelog = "idk what i'm doin";
 mubBot.misc.ready = true;
@@ -375,4 +375,4 @@ botMethods.cleanString = function(string){
         });
     }, 3000);
 
-    API.sendChat('/me is doing DogeButt '+mubBot.misc.version)
+    API.sendChat(' Running DogeButt Luna! Edition '+mubBot.misc.version)
